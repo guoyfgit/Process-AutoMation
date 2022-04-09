@@ -22,29 +22,29 @@ move_date_Td = (today + backMove_date).strftime('%Y-%m-%d')
 re_date_Td = (today + backMax_date).strftime('%Y-%m-%d')
 # 定义路径参数
 def backup_path():
-    gw61_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V06.1.0\国网\服务端'
-    gw61_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\国网\服务端'
-    nw61_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V06.1.0\南网\服务端'
-    nw61_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\南网\服务端'
-    gw85_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V8.5\国网\服务端'
-    gw85_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V8.5\国网\服务端'
-    xtgw61_path = '\\\\10.51.0.204\技术组更新文件\系统组日构建程序备份\V06.1.0\国网\服务端'
-    xtgw61_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\国网\服务端'
-    xtnw61_path = '\\10.51.0.204\技术组更新文件\系统组日构建程序备份\V06.1.0\南网\服务端'
-    xtnw61_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\南网\服务端'
+    gw61_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V06.1.0\国网\服务端'
+    gw61_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\国网\服务端'
+    nw61_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V06.1.0\南网\服务端'
+    nw61_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\南网\服务端'
+    gw85_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V8.5\国网\服务端'
+    gw85_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V8.5\国网\服务端'
+    xtgw61_path = '\\\\127.0.0.1\技术组更新文件\系统组日构建程序备份\V06.1.0\国网\服务端'
+    xtgw61_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\国网\服务端'
+    xtnw61_path = '\\127.0.0.1\技术组更新文件\系统组日构建程序备份\V06.1.0\南网\服务端'
+    xtnw61_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\南网\服务端'
     return gw61_path , gw61_backup_path , nw61_path , nw61_backup_path, gw85_path, gw85_backup_path, xtgw61_path, xtgw61_backup_path, xtnw61_path, xtnw61_backup_path
 
 def client_path():
-    gw61_client_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V06.1.0\国网\客户端'
-    gw61_client_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\国网\客户端'
-    nw61_client_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V06.1.0\南网\客户端'
-    nw61_client_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\南网\客户端'
-    gw85_client_path = '\\\\10.51.0.204\技术组更新文件\维护组增量发布程序备份\V8.5\国网\客户端'
-    gw85_client_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V8.5\国网\客户端'
-    xtgw61_client_path = '\\\\10.51.0.204\技术组更新文件\系统组日构建程序备份\V06.1.0\国网\客户端'
-    xtgw61_client_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\国网\客户端'
-    xtnw61_client_path = '\\10.51.0.204\技术组更新文件\系统组日构建程序备份\V06.1.0\南网\客户端'
-    xtnw61_client_backup_path = '\\\\10.0.0.87\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\南网\客户端'
+    gw61_client_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V06.1.0\国网\客户端'
+    gw61_client_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\国网\客户端'
+    nw61_client_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V06.1.0\南网\客户端'
+    nw61_client_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V06.1.0\南网\客户端'
+    gw85_client_path = '\\\\127.0.0.1\技术组更新文件\维护组增量发布程序备份\V8.5\国网\客户端'
+    gw85_client_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\维护组增量发布程序备份\V8.5\国网\客户端'
+    xtgw61_client_path = '\\\\127.0.0.1\技术组更新文件\系统组日构建程序备份\V06.1.0\国网\客户端'
+    xtgw61_client_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\国网\客户端'
+    xtnw61_client_path = '\\127.0.0.1\技术组更新文件\系统组日构建程序备份\V06.1.0\南网\客户端'
+    xtnw61_client_backup_path = '\\\\127.0.0.1\gris_yfglb_db\增量服务包历史备份\系统组日构建程序备份\V06.1.0\南网\客户端'
     return gw61_client_path, gw61_client_backup_path, nw61_client_path, nw61_client_backup_path, gw85_client_path, gw85_client_backup_path, xtgw61_client_path, xtgw61_client_backup_path, xtnw61_client_path, xtnw61_client_backup_path
 
 # 获取创建时间超过五天的备份并迁移
@@ -105,7 +105,7 @@ if __name__ == '__main__' :
     print("End time :" + today.strftime('%Y-%m-%d %H:%M:%S'))
 
 
-    # 双线程同时处理备份转移和备份清理，考虑硬盘处理速率暂时停用。
+    # 双线程同时处理备份转移和备份清理，考虑硬盘处理速率暂时停用，相关模块未导入。
     #多线程循环处理服务包备份
     # for i in range(0,len(backup_path()),2):
     #     t1 = threading.Thread(target=get_dir_list,args=(backup_path()[i],backup_path()[i+1]))
